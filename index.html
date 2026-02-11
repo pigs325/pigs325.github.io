@@ -1068,7 +1068,7 @@
                         <p dir="auto" style="margin-top: 0px; margin-bottom: 0px;"><strong style="margin-top: 0px; margin-bottom: 0px;">Reference</strong></p>
                       </div>
                       <div>
-                        <model-viewer style="height: 360px; width: 330px;" orientation="0deg 0deg 0deg" camera-controls alt="scene" src="pigs/assets/scannet++/reference_scene078.glb" exposure="1.5" shadow-intensity="1" generate-schema>
+                        <model-viewer style="height: 360px; width: 330px;" orientation="0deg 0deg 0deg" camera-controls alt="scene" src="pigs/assets/replica/office1_gt.glb" exposure="1.5" shadow-intensity="1" generate-schema>
                           <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
                         </model-viewer>
                       </div>
@@ -1093,7 +1093,7 @@
                           orientation="0deg 0deg 0deg"
                           camera-controls
                           alt="scene"
-                          src="pigs/assets/scannet++/airplanes_scene078.glb"
+                          src="pigs/assets/replica/office1_Air.glb"
                           exposure="1.5"
                           shadow-intensity="1"
                           generate-schema
@@ -1107,7 +1107,7 @@
                           orientation="0deg 0deg 0deg"
                           camera-controls
                           alt="scene"
-                          src="pigs/assets/scannet++/planarrecon_scene078.glb"
+                          src="pigs/assets/replica/office1_pr.glb"
                           exposure="1.5"
                           shadow-intensity="1"
                           generate-schema
@@ -1121,7 +1121,7 @@
                           orientation="0deg 0deg 0deg"
                           camera-controls
                           alt="scene"
-                          src="pigs/assets/scannet++/neuralplane_scene078.glb"
+                          src="pigs/assets/replica/office1_np.glb"
                           exposure="1.5"
                           shadow-intensity="1"
                           generate-schema
@@ -1135,7 +1135,7 @@
                           orientation="0deg 0deg 0deg"
                           camera-controls
                           alt="scene"
-                          src="pigs/assets/scannet++/planarsplat_scene078.glb"
+                          src="pigs/assets/replica/office1_ps.glb"
                           exposure="1.5"
                           shadow-intensity="1"
                           generate-schema
@@ -1156,7 +1156,7 @@
                           orientation="0deg 0deg 0deg"
                           camera-controls
                           alt="scene"
-                          src="pigs/assets/scannet++/pigs_scene078.glb"
+                          src="pigs/assets/replica/office1_pigs.glb"
                           exposure="1.5"
                           shadow-intensity="1"
                           generate-schema
@@ -1169,7 +1169,117 @@
                 </div>
               </div>
             </div>
-
+            <!-- office 1 test -->
+            <div class="el-pre">
+              <div class="block-language-col">
+                <div class="columnParent">
+                  <div class="columnChild" style="flex-grow: 1; flex-basis: 100px; width: 100px;">
+                    <div class="block-language-col-md" style="margin-top: 0px; margin-bottom: 0px;">
+                      <div style="flex-grow: 1; flex-basis: 100px; text-align: center; margin-top: 0px; margin-bottom: 0px;">
+                        <p dir="auto" style="margin-top: 0px; margin-bottom: 0px;"><strong style="margin-top: 0px; margin-bottom: 0px;">Reference</strong></p>
+                      </div>
+                      <div>
+                        <model-viewer style="height: 360px; width: 330px;" orientation="0deg 0deg 0deg" camera-controls alt="scene" src="pigs/assets/replica/room0_gt.glb" exposure="1.5" shadow-intensity="1" generate-schema>
+                          <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
+                        </model-viewer>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnChild" style="flex-grow: 1; flex-basis: 100px; width: 100px;">
+                    <div class="block-language-col-md" style="margin-top: 0px; margin-bottom: 0px;">
+                      <div style="flex-grow: 1; flex-basis: 100px; text-align: center; margin-top: 0px; margin-bottom: 0px;">
+                        <p dir="auto" style="margin-top: 0px; margin-bottom: -1px;">
+                          Choose a result from
+                          <select id="full_label-selector4" class="partial_label-selector4" style="padding: 2px; background: #f0f0f0; border: none; font-size: 16px;">
+                            <option value="airplanes" selected>Airplanes</option>
+                            <option value="planarrecon">PlanarRecon</option>
+                            <option value="neuralplane">NeuralPlane</option>
+                            <option value="planarsplat">PlanarSplat</option>
+                          </select>
+                        </p>
+                      </div>
+                      <div class="full_label4 airplanes">
+                        <model-viewer
+                          style="height: 360px; width: 330px;"
+                          orientation="0deg 0deg 0deg"
+                          camera-controls
+                          alt="scene"
+                          src="pigs/assets/replica/room0_Air.glb"
+                          exposure="1.5"
+                          shadow-intensity="1"
+                          generate-schema
+                        >
+                          <effect-composer render-mode="quality" msaa="8"> <color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect> </effect-composer>
+                        </model-viewer>
+                      </div>
+                      <div class="full_label4 planarrecon" , style="display: none;">
+                        <model-viewer
+                          style="height: 360px; width: 330px;"
+                          orientation="0deg 0deg 0deg"
+                          camera-controls
+                          alt="scene"
+                          src="pigs/assets/replica/room0_pr.glb"
+                          exposure="1.5"
+                          shadow-intensity="1"
+                          generate-schema
+                        >
+                          <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
+                        </model-viewer>
+                      </div>
+                      <div class="full_label4 neuralplane" , style="display: none;">
+                        <model-viewer
+                          style="height: 360px; width: 330px;"
+                          orientation="0deg 0deg 0deg"
+                          camera-controls
+                          alt="scene"
+                          src="pigs/assets/replica/room0_np.glb"
+                          exposure="1.5"
+                          shadow-intensity="1"
+                          generate-schema
+                        >
+                          <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
+                        </model-viewer>
+                      </div>
+                      <div class="full_label4 planarsplat" , style="display: none;">
+                        <model-viewer
+                          style="height: 360px; width: 330px;"
+                          orientation="0deg 0deg 0deg"
+                          camera-controls
+                          alt="scene"
+                          src="pigs/assets/replica/room0_ps.glb"
+                          exposure="1.5"
+                          shadow-intensity="1"
+                          generate-schema
+                        >
+                          <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
+                        </model-viewer>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columnChild" style="flex-grow: 1; flex-basis: 100px; width: 100px;">
+                    <div class="block-language-col-md" style="margin-top: 0px; margin-bottom: 0px;">
+                      <div style="flex-grow: 1; flex-basis: 100px; text-align: center; margin-top: 0px; margin-bottom: 0px;">
+                        <p dir="auto" style="margin-top: 0px; margin-bottom: 0px;"><strong style="margin-top: 0px; margin-bottom: 0px;">Ours</strong></p>
+                      </div>
+                      <div>
+                        <model-viewer
+                          style="height: 360px; width: 330px;"
+                          orientation="0deg 0deg 0deg"
+                          camera-controls
+                          alt="scene"
+                          src="pigs/assets/replica/room0_pigs.glb"
+                          exposure="1.5"
+                          shadow-intensity="1"
+                          generate-schema
+                        >
+                          <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
+                        </model-viewer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <footer style="text-align:center; margin-top:40px; margin-bottom:20px; font-size:14px; color:#666;">
@@ -1252,6 +1362,10 @@
                         </div>
                         <div class="tree-item" data-depth="4">
                           <a class="tree-item-self is-clickable" href="home.html#ScanNet++_0" data-path="#ScanNet++_0"><div class="tree-item-inner heading-link" heading-name="ScanNet++">ScanNet++</div></a>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item" data-depth="4">
+                          <a class="tree-item-self is-clickable" href="home.html#Replica_0" data-path="#Replica_0"><div class="tree-item-inner heading-link" heading-name="Replica">Replica</div></a>
                           <div class="tree-item-children"></div>
                         </div>
                       </div>
