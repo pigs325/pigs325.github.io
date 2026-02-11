@@ -427,7 +427,7 @@
                 Chunming Li,
                 Ye Chen, 
                 <a href="https://bit-dyn.github.io/" target="_blank" rel="noopener noreferrer">Yinan Deng</a>,
-                Yi Yang,
+                <a href="https://ac.bit.edu.cn/szdw/jsml/dhzdykzyjs1/e086600661a748cc88a9ee146ff9d9a6.htm" target="_blank" rel="noopener noreferrer">Yi Yang</a>,
                 <a href="https://yfyue-bit.github.io/" target="_blank" rel="noopener noreferrer">Yufeng Yue</a>
               </center>
             </div>
@@ -457,7 +457,7 @@
                             target="_self"
                             style="margin-bottom: 0px;"
                           >
-                            <code style="margin-bottom: 0px;">Code</code>
+                            <code style="margin-bottom: 0px;">Code (Available!)</code>
                           </a>
                         </p>
                       </div>
@@ -507,7 +507,7 @@
                 <img style="width: 100%;" alt="Teaser" src="./pigs/assets/Overview.png" referrerpolicy="no-referrer" target="_self" />
                 <center>
                   <div style="margin-top: 20px; text-align: justify; width: 100%;">
-                    Planar structures, ubiquitous in man-made indoor environments, enable compact and accurate scene decomposition. Recent methods distill planar features into learning-based MVS geometries for multi-view 3D plane estimation. However, the implicit nature of planar features hinders the semantic–geometry alignment within individual planar instances, resulting in distorted geometry and fragmented semantics. To address this, <strong>we propose PIGS, the first Planar-Instance Gaussian Splatting framework that explicitly targets planar instances and enforces planar semantic–geometry alignment through planar structural priors, free from feature distillation.</strong> Starting from planar-unaware geometry, our method first employs the GHPS module to achieve annotation-free single-view planar segmentation, then utilizes the MVSA module to perform multi-view instance association and planarity aggregation, and finally leverages the PIGO module to initialize and optimize Planar-Instance Gaussian primitives (PIGs) through planar-aware loss functions during instance-level splatting. Followed by a planar-aware ball-pivoting strategy for final plane mesh extraction, PIGS produces semantically and geometrically aligned 3D planes, closely matching RGB references. <strong>Extensive experiments on hundreds of indoor scenes and comprehensive ablations demonstrate the superior performance, while module-agnostic evaluations and outdoor experiments validate its generalization capability.</strong>
+                    Planar structures, ubiquitous in man-made indoor environments, enable compact and accurate scene decomposition. Recent methods distill planar features into learning-based MVS geometries for multi-view 3D plane estimation. However, the implicit nature of planar features hinders the semantic–geometry alignment within individual planar instances, resulting in distorted geometry and fragmented semantics. To address this, <strong>we propose PIGS, the first Planar-Instance Gaussian Splatting framework that explicitly targets planar instances and enforces planar semantic–geometry alignment through planar structural priors, free from feature distillation.</strong> Starting from planar-unaware geometry, our method first employs the GHPS module to achieve annotation-free single-view planar segmentation, then utilizes the MVSA module to perform multi-view instance association and planarity aggregation, and finally leverages the PIGO module to initialize and optimize Planar-Instance Gaussian primitives through planar-aware loss functions during instance-level splatting. Followed by a planar-aware ball-pivoting strategy for final plane mesh extraction, PIGS produces semantically and geometrically aligned 3D planes, closely matching RGB references. <strong>Extensive experiments on hundreds of indoor scenes and comprehensive ablations demonstrate the superior performance, while module-agnostic evaluations and outdoor experiments validate its generalization capability.</strong>
                   </div>
                 </center>
               </div>
@@ -1292,6 +1292,39 @@
                 </div>
               </div>
             </div>
+
+            <!-- 我需要在这里插入一个循环播放的视频 -->
+            <div class="el-center">
+              <center>
+                <!-- 左侧普通 RGB 视频 -->
+                <div style="position:relative; display:inline-block; margin-right:20px;">
+                  <video src="./pigs/assets/render_rgb_h264.mp4"
+                         muted autoplay playsinline loop
+                         id="rgbVideo"
+                         style="width:400px; height:auto;">
+                  </video>
+                  <canvas id="rgbCanvas"
+                          style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none;"></canvas>
+                </div>
+            
+                <!-- 右侧单个拼接视频（十字滑动版本） -->
+                <div style="position:relative; display:inline-block;">
+                  <video src="./pigs/assets/render_compare.mp4"
+                         muted autoplay playsinline loop
+                         id="compareVideo"
+                         onplay="resizeAndPlay(this)"
+                         style="width:400px; height:auto;">
+                  </video>
+                  <canvas id="xyaliasMerge" class="videoMerge" style="width:400px; height:auto;"></canvas>
+                </div>
+            
+                <!-- 说明文字 -->
+                <p dir="auto" style="width: 750px; white-space: normal; word-wrap: break-word; margin: 0 auto; text-align: center; margin-top: 15px; font-size: 1.2rem;">
+                  <b>PIGS</b> reconstructs planar instance meshes, achieving alignment between geometry and semantics through planar structural priors.
+                </p>
+              </center>
+            </div>
+
           </div>
         </div>
         <footer style="text-align:center; margin-top:40px; margin-bottom:20px; font-size:14px; color:#666;">
