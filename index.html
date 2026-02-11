@@ -1294,6 +1294,10 @@
             </div>
 
             <!-- 我需要在这里插入一个循环播放的视频 -->
+            <div class="el-hr"><hr /></div>
+            <div class="el-center">
+              <center><h2 dir="auto" class="heading" id="Application_case_0">Application case</h2></center>
+            </div>
             <div class="el-center">
               <center>
                 <!-- 左侧普通 RGB 视频 -->
@@ -1305,17 +1309,6 @@
                   </video>
                   <canvas id="rgbCanvas"
                           style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none;"></canvas>
-                </div>
-            
-                <!-- 右侧单个拼接视频（十字滑动版本） -->
-                <div style="position:relative; display:inline-block;">
-                  <video src="./pigs/assets/render_compare.mp4"
-                         muted autoplay playsinline loop
-                         id="compareVideo"
-                         onplay="resizeAndPlay(this)"
-                         style="width:400px; height:auto;">
-                  </video>
-                  <canvas id="xyaliasMerge" class="videoMerge" style="width:400px; height:auto;"></canvas>
                 </div>
             
                 <!-- 说明文字 -->
@@ -1414,6 +1407,10 @@
                           <div class="tree-item-children"></div>
                         </div>
                       </div>
+                    </div>
+                    <div class="tree-item" data-depth="2">
+                      <a class="tree-item-self is-clickable" href="home.html#Application_case_0" data-path="#Application_case_0"><div class="tree-item-inner heading-link" heading-name="Application case">Application case</div></a>
+                      <div class="tree-item-children"></div>
                     </div>
                   </div>
                 </div>
