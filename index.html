@@ -1302,10 +1302,10 @@
               <center>
                 <!-- 左侧普通 RGB 视频 -->
                 <div style="position:relative; display:inline-block; margin-right:20px;">
-                  <video src="./pigs/assets/render_rgb_h264.mp4"
+                  <video src="./pigs/assets/VR_teleop.mp4"
                          muted autoplay playsinline loop
                          id="rgbVideo"
-                         style="width:400px; height:auto;">
+                         style="width:600px; height:auto;">
                   </video>
                   <canvas id="rgbCanvas"
                           style="position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none;"></canvas>
@@ -1313,7 +1313,11 @@
             
                 <!-- 说明文字 -->
                 <p dir="auto" style="width: 750px; white-space: normal; word-wrap: break-word; margin: 0 auto; text-align: center; margin-top: 15px; font-size: 1.2rem;">
-                  <b>PIGS</b> reconstructs planar instance meshes, achieving alignment between geometry and semantics through planar structural priors.
+                  As compact scene-level collision geometry in
+                  <a href="https://developer.nvidia.com/isaac/sim" target="_blank" style="text-decoration: none; color: inherit;">
+                    IsaacSim
+                  </a>, 
+                  PIGS planes consume <strong>less VRAM than detailed meshes while preserving complete structural fidelity</strong> for VR-based teleoperation and other downstream tasks.
                 </p>
               </center>
             </div>
