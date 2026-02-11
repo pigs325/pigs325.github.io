@@ -544,6 +544,18 @@
                   console.log($(this).val());
                 });
 
+                $("#full_label-selector5").change(function () {
+                  $(".full_label5").hide();
+                  $(".full_label5." + $(this).val()).show();
+                  console.log($(this).val());
+                });
+
+                $("#full_label-selector6").change(function () {
+                  $(".full_label6").hide();
+                  $(".full_label6." + $(this).val()).show();
+                  console.log($(this).val());
+                });
+
                 $(".partial_label-selector-3D").change(function () {
                   var dataset = $("#partial_label-selector1_3D").val();
                   var label = $("#partial_label-selector2_3D").val();
@@ -1079,7 +1091,7 @@
                       <div style="flex-grow: 1; flex-basis: 100px; text-align: center; margin-top: 0px; margin-bottom: 0px;">
                         <p dir="auto" style="margin-top: 0px; margin-bottom: -1px;">
                           Choose a result from
-                          <select id="full_label-selector4" class="partial_label-selector4" style="padding: 2px; background: #f0f0f0; border: none; font-size: 16px;">
+                          <select id="full_label-selector5" class="partial_label-selector5" style="padding: 2px; background: #f0f0f0; border: none; font-size: 16px;">
                             <option value="airplanes" selected>Airplanes</option>
                             <option value="planarrecon">PlanarRecon</option>
                             <option value="neuralplane">NeuralPlane</option>
@@ -1087,7 +1099,7 @@
                           </select>
                         </p>
                       </div>
-                      <div class="full_label4 airplanes">
+                      <div class="full_label5 airplanes">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1101,7 +1113,7 @@
                           <effect-composer render-mode="quality" msaa="8"> <color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect> </effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 planarrecon" , style="display: none;">
+                      <div class="full_label5 planarrecon" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1115,7 +1127,7 @@
                           <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 neuralplane" , style="display: none;">
+                      <div class="full_label5 neuralplane" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1129,7 +1141,7 @@
                           <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 planarsplat" , style="display: none;">
+                      <div class="full_label5 planarsplat" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1190,7 +1202,7 @@
                       <div style="flex-grow: 1; flex-basis: 100px; text-align: center; margin-top: 0px; margin-bottom: 0px;">
                         <p dir="auto" style="margin-top: 0px; margin-bottom: -1px;">
                           Choose a result from
-                          <select id="full_label-selector4" class="partial_label-selector4" style="padding: 2px; background: #f0f0f0; border: none; font-size: 16px;">
+                          <select id="full_label-selector6" class="partial_label-selector6" style="padding: 2px; background: #f0f0f0; border: none; font-size: 16px;">
                             <option value="airplanes" selected>Airplanes</option>
                             <option value="planarrecon">PlanarRecon</option>
                             <option value="neuralplane">NeuralPlane</option>
@@ -1198,7 +1210,7 @@
                           </select>
                         </p>
                       </div>
-                      <div class="full_label4 airplanes">
+                      <div class="full_label6 airplanes">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1212,7 +1224,7 @@
                           <effect-composer render-mode="quality" msaa="8"> <color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect> </effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 planarrecon" , style="display: none;">
+                      <div class="full_label6 planarrecon" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1226,7 +1238,7 @@
                           <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 neuralplane" , style="display: none;">
+                      <div class="full_label6 neuralplane" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
@@ -1240,7 +1252,7 @@
                           <effect-composer render-mode="quality" msaa="8"><color-grade-effect contrast="0.2" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect></effect-composer>
                         </model-viewer>
                       </div>
-                      <div class="full_label4 planarsplat" , style="display: none;">
+                      <div class="full_label6 planarsplat" , style="display: none;">
                         <model-viewer
                           style="height: 360px; width: 330px;"
                           orientation="0deg 0deg 0deg"
